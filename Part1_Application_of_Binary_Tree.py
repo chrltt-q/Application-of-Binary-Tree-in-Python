@@ -47,3 +47,9 @@ def build_tree(elements):
 
     return root
 
+
+if __name__ == '__main__':
+    numbers = [15, 12, 9, 8, 26, 1, 4, 29]
+    numbers_tree = build_tree(numbers)
+    print(numbers_tree.in_order_traversal())
+
