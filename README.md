@@ -1,1 +1,2 @@
 # Application-of-Binary-Tree-in-Python
+'''This is a compilation of the exercises based on the YouTube videos (1) https_://www.youtube.com/watch?v=lFq5mYUWEBk (2) https_://www.youtube.com/watch?v=JnrbMQyGLiU . It is divided into two parts wherein it both allows the user to input their name as the content of the Binary Tree, search and delete a letter in the list, and arrange them in pre, in, and post order traversals. '''
