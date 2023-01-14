@@ -41,11 +41,6 @@ class BinarySearchTreeNode:
             else:
                 return False
 
-    def find_min(self):
-        if self.left is None:
-            return self.data
-        return self.left.find_min()
-
     def in_order_traversal(self):
         elements = []
 
@@ -75,14 +70,8 @@ if __name__ == '__main__':
     print("UK is in the list? ", country_tree.search("UK"))
     print("Sweden is in the list? ", country_tree.search("Sweden"))
 
-    numbers = [15, 12, 9, 8, 26, 1, 4, 29]
-    numbers_tree = build_tree(numbers)
-    print(numbers_tree.in_order_traversal())
-    print("Minimum number in the list:", numbers_tree.find_min())
-
     name = ["C", "H", "A", "R", "L", "O", "T", "T", "E", "M", "Q", "U", "E", "Z", "A", "D", "A"]
     name_tree = build_tree(name)
     print("Is the letter M in the list?", name_tree.search("M"))
     print("Is the letter B in the list?", name_tree.search("B"))
     print(name_tree.in_order_traversal())
-
