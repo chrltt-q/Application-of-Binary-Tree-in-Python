@@ -41,6 +41,15 @@ class BinarySearchTreeNode:
             else:
                 return False
 
+    def pre_order_traversal(self):
+        elements = [self.data]
+        if self.left:
+            elements += self.left.pre_order_traversal()
+        if self.right:
+            elements += self.right.pre_order_traversal()
+
+        return elements
+
     def in_order_traversal(self):
         elements = []
 
@@ -74,4 +83,5 @@ if __name__ == '__main__':
     name_tree = build_tree(name)
     print("Is the letter M in the list?", name_tree.search("M"))
     print("Is the letter B in the list?", name_tree.search("B"))
+    print(name_tree.pre_order_traversal())
     print(name_tree.in_order_traversal())
