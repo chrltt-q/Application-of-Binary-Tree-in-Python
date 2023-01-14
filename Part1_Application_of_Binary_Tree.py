@@ -70,7 +70,9 @@ class BinarySearchTreeNode:
         if self.right:
             elements += self.right.post_order_traversal()
 
+        elements.append(self.data)
 
+        return elements
 
 
 def build_tree(elements):
@@ -94,6 +96,7 @@ if __name__ == '__main__':
     print("Is the letter B in the list?", name_tree.search("B"))
     print(name_tree.pre_order_traversal())
     print(name_tree.in_order_traversal())
+    print(name_tree.post_order_traversal())
 
     # User Input
     user_name = input(str("Please enter your full name with space in between each letter: "))
@@ -101,4 +104,5 @@ if __name__ == '__main__':
     user_name_tree = build_tree(user_name_list)
     print(user_name_tree.pre_order_traversal())
     print(user_name_tree.in_order_traversal())
+    print(user_name_tree.post_order_traversal())
 
