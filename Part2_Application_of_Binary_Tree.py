@@ -3,6 +3,10 @@ print("****** Charlotte Quezada ******")
 print("********** BSCOE 2-2 **********")
 print("*** Sir Danilo Madrigalejos ***\n")
 
+# This code allows the user to input their name as the content of the Binary Tree,
+# delete a letter in the list by modifying a delete method using max value from the left subtree,
+# and arrange them in pre, in, and post order traversals.
+
 
 class BinarySearchTreeNode:
     def __init__(self, data):
@@ -133,17 +137,16 @@ if __name__ == '__main__':
     print("  In Order Traversal of the list   >>>", name_tree.in_order_traversal())
     print("  Post Order Traversal of the list >>>", name_tree.post_order_traversal())
 
+    # User Input
     print("\n* * * Asking for User Input as the content of the Binary Tree * * *")
     user_name = input(str("Please enter your full name with space in between each letter: "))
     user_name_list = user_name.split()
     user_name_tree = build_tree(user_name_list)
     print("Given List for Binary Tree:", user_name_list)
+    # Asks user input for the letter the user wants to delete in the list
     delete_letter = input(str("Please enter the letter you want to delete in the list: "))
     user_name_tree.delete(delete_letter)
     print("These are the results after deleting the letter "f"{delete_letter} in the list:")
     print("  Pre Order Traversal of the list  >>>", user_name_tree.pre_order_traversal())
     print("  In Order Traversal of the list   >>>", user_name_tree.in_order_traversal())
     print("  Post Order Traversal of the list >>>", user_name_tree.post_order_traversal())
-
-
-
