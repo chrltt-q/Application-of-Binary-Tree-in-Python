@@ -3,6 +3,9 @@ print("****** Charlotte Quezada ******")
 print("********** BSCOE 2-2 **********")
 print("*** Sir Danilo Madrigalejos ***\n")
 
+# This code allows the user to input their name as the content of the Binary Tree,
+# search a letter in the list, and arrange them in pre, in, and post order traversals.
+
 
 class BinarySearchTreeNode:
     def __init__(self, data):
@@ -42,7 +45,9 @@ class BinarySearchTreeNode:
                 return False
 
     def pre_order_traversal(self):
-        elements = [self.data]
+        elements = []
+        elements.append(self.data)
+
         if self.left:
             elements += self.left.pre_order_traversal()
         if self.right:
