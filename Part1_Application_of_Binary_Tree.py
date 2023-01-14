@@ -41,6 +41,12 @@ class BinarySearchTreeNode:
             else:
                 return False
 
+    def find_min(self):
+        if self.left is None:
+            return self.data
+        
+
+
     def in_order_traversal(self):
         elements = []
 
