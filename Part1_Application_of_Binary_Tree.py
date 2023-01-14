@@ -89,8 +89,8 @@ if __name__ == '__main__':
     countries = ["India", "Pakistan", "Germany", "USA", "China", "India", "UK", "USA"]
     country_tree = build_tree(countries)
     print("Given List for Binary Tree:", countries)
-    print("UK is in the list? ", country_tree.search("UK"))
-    print("Sweden is in the list? ", country_tree.search("Sweden"))
+    print("Is UK in the list?", country_tree.search("UK"))
+    print("Is Sweden in the list?", country_tree.search("Sweden"))
 
     print("\n* * * Using the letters in your full name as the content of the Binary Tree * * *")
     name = ["C", "H", "A", "R", "L", "O", "T", "T", "E", "M", "Q", "U", "E", "Z", "A", "D", "A"]
@@ -98,9 +98,9 @@ if __name__ == '__main__':
     print("Given List for Binary Tree:", name)
     print("Is the given letter M in the list?", name_tree.search("M"))
     print("Is the given letter B in the list?", name_tree.search("B"))
-    print(name_tree.pre_order_traversal())
-    print(name_tree.in_order_traversal())
-    print(name_tree.post_order_traversal())
+    print("Pre Order Traversal of the list:", name_tree.pre_order_traversal())
+    print("In Order Traversal of the list:", name_tree.in_order_traversal())
+    print("Post Order Traversal of the list:", name_tree.post_order_traversal())
 
     # User Input
     def get_letter():  # Asks user input for the letter the user wants to search on the list
@@ -114,6 +114,6 @@ if __name__ == '__main__':
     print("Given List for Binary Tree:", user_name_list)
     get_letter()
     get_letter()
-    print(user_name_tree.pre_order_traversal())
-    print(user_name_tree.in_order_traversal())
-    print(user_name_tree.post_order_traversal())
+    print("Pre Order Traversal of the list:", user_name_tree.pre_order_traversal())
+    print("In Order Traversal of the list:", user_name_tree.in_order_traversal())
+    print("Post Order Traversal of the list:", user_name_tree.post_order_traversal())
