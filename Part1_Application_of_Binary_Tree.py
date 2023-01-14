@@ -74,4 +74,9 @@ if __name__ == '__main__':
     numbers_tree = build_tree(numbers)
     print(numbers_tree.in_order_traversal())
 
+    name = ["C", "H", "A", "R", "L", "O", "T", "T", "E", "M", "Q", "U", "E", "Z", "A", "D", "A"]
+    name_tree = build_tree(name)
+    print("Is the letter M in the list?", name_tree.search("M"))
+    print("Is the letter B in the list?", name_tree.search("B"))
+    print(name_tree.in_order_traversal())
 
