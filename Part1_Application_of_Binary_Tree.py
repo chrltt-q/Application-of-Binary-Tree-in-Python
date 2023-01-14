@@ -87,9 +87,9 @@ if __name__ == '__main__':
     print(name_tree.in_order_traversal())
 
     # User Input
-    name2 = input(str("Please enter your full name with space in between each letter: "))
-    name2_list = name2.split()
-    name2_tree = build_tree(name2_list)
-    print(name2_tree.pre_order_traversal())
-    print(name2_tree.in_order_traversal())
+    user_name = input(str("Please enter your full name with space in between each letter: "))
+    user_name_list = user_name.split()
+    user_name_tree = build_tree(user_name_list)
+    print(user_name_tree.pre_order_traversal())
+    print(user_name_tree.in_order_traversal())
 
