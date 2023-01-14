@@ -85,24 +85,31 @@ def build_tree(elements):
 
 
 if __name__ == '__main__':
+    print("* * * Sample Trial * * *")
     countries = ["India", "Pakistan", "Germany", "USA", "China", "India", "UK", "USA"]
     country_tree = build_tree(countries)
+    print("Given List for Binary Tree:", countries)
     print("UK is in the list? ", country_tree.search("UK"))
     print("Sweden is in the list? ", country_tree.search("Sweden"))
 
+    print("\n* * * Using the letters in your full name as the content of the Binary Tree * * *")
     name = ["C", "H", "A", "R", "L", "O", "T", "T", "E", "M", "Q", "U", "E", "Z", "A", "D", "A"]
     name_tree = build_tree(name)
-    print("Is the letter M in the list?", name_tree.search("M"))
-    print("Is the letter B in the list?", name_tree.search("B"))
+    print("Given List for Binary Tree:", name)
+    print("Is the given letter M in the list?", name_tree.search("M"))
+    print("Is the given letter B in the list?", name_tree.search("B"))
     print(name_tree.pre_order_traversal())
     print(name_tree.in_order_traversal())
     print(name_tree.post_order_traversal())
 
     # User Input
+    print("\n* * * Asking for User Input as the content of the Binary Tree * * *")
     user_name = input(str("Please enter your full name with space in between each letter: "))
     user_name_list = user_name.split()
     user_name_tree = build_tree(user_name_list)
+    print("Given List for Binary Tree:", user_name_list)
+    search_letter1 = input(str("Please enter the letter you want to search in the list: "))
+    print("Is the given letter "f"{search_letter1} in the list?", user_name_tree.search(search_letter1))
     print(user_name_tree.pre_order_traversal())
     print(user_name_tree.in_order_traversal())
     print(user_name_tree.post_order_traversal())
-
