@@ -118,7 +118,7 @@ if __name__ == '__main__':
     country_tree = build_tree(countries)
     country_tree.delete("Pakistan")
     print("Given List for Binary Tree:", countries)
-    print("This is the result after deleting Pakistan in the list:")
+    print("These are the results after deleting Pakistan in the list:")
     print("Pre Order Traversal of the list >>>", country_tree.pre_order_traversal())
     print("In Order Traversal of the list >>>", country_tree.in_order_traversal())
     print("Post Order Traversal of the list >>>", country_tree.post_order_traversal())
