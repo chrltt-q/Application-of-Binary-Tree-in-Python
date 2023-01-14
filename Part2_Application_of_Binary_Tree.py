@@ -110,3 +110,13 @@ def build_tree(elements):
         root.add_child(elements[i])
 
     return root
+
+
+if __name__ == '__main__':
+    print("* * * Sample Trial * * *")
+    countries = ["India", "Pakistan", "Germany", "USA", "China", "India", "UK", "USA"]
+    country_tree = build_tree(countries)
+    country_tree.delete("Pakistan")
+    print("Given List for Binary Tree:", countries)
+    print("This is the result after deleting Pakistan in the list:", country_tree.in_order_traversal())
+
