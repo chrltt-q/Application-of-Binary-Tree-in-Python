@@ -63,6 +63,15 @@ class BinarySearchTreeNode:
 
         return elements
 
+    def post_order_traversal(self):
+        elements = []
+        if self.left:
+            elements += self.left.post_order_traversal()
+        if self.right:
+            elements += self.right.post_order_traversal()
+
+
+
 
 def build_tree(elements):
     root = BinarySearchTreeNode(elements[0])
